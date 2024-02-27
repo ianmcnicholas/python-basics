@@ -90,10 +90,55 @@ print(names[:2])
 print(names[:])
 names[0] = "James"
 print(names)
+
 numbersList = [3, 79, 3, 1, 8, 5, 3, 7, 52]
 highestNumber = 0
 for number in numbersList:
     if number > highestNumber:
         highestNumber = number
-
 print(highestNumber)
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(matrix[0][1])
+
+for row in matrix:
+    for item in row:
+        print(item)
+matrix.append([10, 11, 12])
+print(matrix)
+matrix.insert(0, [0, 0, 0])
+print(matrix)
+matrix.insert(3, [0, 0, 0])
+print(matrix)
+matrix.remove(matrix[3])
+print(matrix)
+matrix.pop()
+print(matrix)
+print(matrix.index([0, 0, 0]))
+print(50 in matrix)  # will print False
+matrix.sort()
+print(matrix)
+matrix2 = matrix.copy()
+matrix2.append([30])
+print(matrix)
+print(matrix2)
+
+# Tuples
+tuplesList = (3, 6, 2, 1, 2, 2)
+# tuplesList is immutable!!!
+print(tuplesList.count(2))
+print(tuplesList.count(1))
+
+coords = (1, 2, 3)
+# coords[0] * coords[1] * coords[2]
+# x = coords[0]
+# y = coords[1]
+# z = coords[2]
+# x * y * z
+# UNPACKING
+x, y, z = coords  # same as above.  Can also be done with Lists
+print(x)
