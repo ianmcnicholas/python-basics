@@ -79,3 +79,21 @@ print(round(x))
 print(abs(-2.9))
 
 print(math.floor(2.9))
+
+# LISTS
+names = ["Ian", "Lee", "Ernie", "Charlie"]
+print(names)
+print(names[2])
+print(names[2:])
+print(names[1:3])
+print(names[:2])
+print(names[:])
+names[0] = "James"
+print(names)
+numbersList = [3, 79, 3, 1, 8, 5, 3, 7, 52]
+highestNumber = 0
+for number in numbersList:
+    if number > highestNumber:
+        highestNumber = number
+
+print(highestNumber)
