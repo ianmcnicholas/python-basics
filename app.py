@@ -157,8 +157,16 @@ print(person.get("test"))  # Will print None.  Not using get will cause an error
 print(person.get("Town", "London"))  # provide default value if none found
 
 # EMOJIS
+# On a Mac, access emojis with - Control + Command + Space
 emojis = {
     ":)": "🙂",
     ":(": "😞"
 }
 print(emojis.get(":)"))
+
+
+def greet_user(name):
+    print(f"Hello there, {name}")
+
+
+greet_user("Ian McNicholas")
