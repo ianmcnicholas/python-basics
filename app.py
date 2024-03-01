@@ -142,3 +142,23 @@ coords = (1, 2, 3)
 # UNPACKING
 x, y, z = coords  # same as above.  Can also be done with Lists
 print(x)
+
+# Dictionaries
+person = {
+    "name": "Ian McNicholas",
+    "age": 34,
+    "is_Verified": True
+}
+print(person)
+print(person["name"])
+person["name"] = "Lee P"
+print(person)
+print(person.get("test"))  # Will print None.  Not using get will cause an error
+print(person.get("Town", "London"))  # provide default value if none found
+
+# EMOJIS
+emojis = {
+    ":)": "🙂",
+    ":(": "😞"
+}
+print(emojis.get(":)"))
