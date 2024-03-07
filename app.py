@@ -1,5 +1,7 @@
 import math
 
+import ecommerce.shipping
+
 # print("Hello World")
 # print("o----")
 # print(" ||||")
@@ -165,8 +167,13 @@ emojis = {
 print(emojis.get(":)"))
 
 
-def greet_user(name):
-    print(f"Hello there, {name}")
+def greet_user(first_name="Jeff", last_name="Bridges"):
+    print(f"Hello there, {first_name} {last_name}")
 
 
 greet_user("Ian McNicholas")
+greet_user()
+greet_user(last_name="Smith")
+greet_user(last_name="Sumner", first_name="Hugo")
+
+ecommerce.shipping.find_cost()
